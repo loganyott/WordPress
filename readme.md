@@ -1,5 +1,7 @@
 # loganyott/wordpress
 
+A vagrant and composer driven wordpress install.
+
 ## Local Environment Setup
 
 1. `vagrant up`
