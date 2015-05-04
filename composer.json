@@ -1,0 +1,13 @@
+{
+    "name": "loganyott/wp",
+    "description": "Base WordPress Installation",
+    "authors": [
+        {
+            "name": "Logan Yott",
+            "email": "loganyott@gmail.com"
+        }
+    ],
+    "require": {
+        "johnpbloch/wordpress": "~4.2"
+    }
+}
