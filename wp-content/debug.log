@@ -1,6 +1,0 @@
-[04-May-2015 23:15:25 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /srv/www/wordpress/wp-admin/includes/translation-install.php on line 59
-[04-May-2015 23:15:25 UTC] PHP Stack trace:
-[04-May-2015 23:15:25 UTC] PHP   1. {main}() /srv/www/wordpress/wp-admin/install.php:0
-[04-May-2015 23:15:25 UTC] PHP   2. wp_get_available_translations() /srv/www/wordpress/wp-admin/install.php:196
-[04-May-2015 23:15:25 UTC] PHP   3. translations_api() /srv/www/wordpress/wp-admin/includes/translation-install.php:103
-[04-May-2015 23:15:25 UTC] PHP   4. trigger_error() /srv/www/wordpress/wp-admin/includes/translation-install.php:59
