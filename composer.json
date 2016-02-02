@@ -8,6 +8,7 @@
         }
     ],
     "require": {
-        "johnpbloch/wordpress": "~4.2"
+        "johnpbloch/wordpress": "~4.2",
+        "loganyott/vagrant": "dev-master"
     }
 }

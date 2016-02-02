@@ -1,10 +1,11 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d41553010d34fdc6a5238bfb408bc104",
+    "hash": "6399ae1005659365cb401cfd73d9bf70",
+    "content-hash": "f456dec083e1c0e6c2e943b132a09fb4",
     "packages": [
         {
             "name": "johnpbloch/wordpress",
@@ -45,20 +46,20 @@
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
-            "version": "0.2.0",
+            "version": "0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core-installer.git",
-                "reference": "a4c08e91be99e858c7778c2f52a4d73820147c2e"
+                "reference": "a04c2c383ef13aae077f36799ed2eafdebd618d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/a4c08e91be99e858c7778c2f52a4d73820147c2e",
-                "reference": "a4c08e91be99e858c7778c2f52a4d73820147c2e",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/a04c2c383ef13aae077f36799ed2eafdebd618d2",
+                "reference": "a04c2c383ef13aae077f36799ed2eafdebd618d2",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "1.0.0"
+                "composer-plugin-api": "^1.0"
             },
             "conflict": {
                 "composer/installers": "<1.0.6"
@@ -86,23 +87,29 @@
                 }
             ],
             "description": "A custom installer to handle deploying WordPress with composer",
-            "time": "2013-09-09 15:04:54"
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2015-06-11 15:15:30"
         },
         {
-            "name": "loganyott/wp-vagrant",
-            "version": "0.1",
+            "name": "loganyott/vagrant",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/loganyott/wp-vagrant.git",
-                "reference": "dc986047704b4c219b78ba604b1ea941a5591479"
+                "url": "https://github.com/loganyott/vagrant.git",
+                "reference": "009da6bef9457ebfbc9b5c48b79ae3bacee5c2e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/loganyott/wp-vagrant/zipball/dc986047704b4c219b78ba604b1ea941a5591479",
-                "reference": "dc986047704b4c219b78ba604b1ea941a5591479",
+                "url": "https://api.github.com/repos/loganyott/vagrant/zipball/009da6bef9457ebfbc9b5c48b79ae3bacee5c2e2",
+                "reference": "009da6bef9457ebfbc9b5c48b79ae3bacee5c2e2",
                 "shasum": ""
             },
-            "type": "library",
+            "require": {
+                "loganyott/vagrant-installer": "~0.3"
+            },
+            "type": "vagrant-config",
             "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
@@ -110,14 +117,54 @@
                     "email": "loganyott@gmail.com"
                 }
             ],
-            "description": "Vagrant install for local WordPress development",
-            "time": "2015-05-04 22:20:03"
+            "time": "2015-10-12 16:51:57"
+        },
+        {
+            "name": "loganyott/vagrant-installer",
+            "version": "0.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/loganyott/vagrant-installer.git",
+                "reference": "1b63d3e75dd364041a0e32883c6a5906f3f937ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/loganyott/vagrant-installer/zipball/1b63d3e75dd364041a0e32883c6a5906f3f937ab",
+                "reference": "1b63d3e75dd364041a0e32883c6a5906f3f937ab",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "loganyott\\Composer\\VagrantInstallerPlugin"
+            },
+            "autoload": {
+                "psr-0": {
+                    "loganyott\\Composer": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Logan Yott",
+                    "email": "loganyott@gmail.com"
+                }
+            ],
+            "description": "Installer for Vagrant configurations",
+            "time": "2015-06-30 21:46:14"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "loganyott/vagrant": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
